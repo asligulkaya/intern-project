@@ -1,19 +1,15 @@
 <template>
-  <Header />
-  <Letter />
-  <Scroll />
+  <Letter/>
 </template>
 
 <script>
 import Header from "@/components/Header.vue";
 import Letter from "@/components/Letter.vue";
-import Scroll from "@/components/Scroll.vue";
 
 export default {
   components: {
     Letter,
-    Scroll,
-    Header,
+    Header
   },
 };
 </script>

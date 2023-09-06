@@ -5,7 +5,16 @@
 </template>
 
 <script>
-export default {};
+export default {
+  mounted() {
+    setTimeout(() => {
+      const scrollBtn = document.querySelector(".scroll-btn");
+      scrollBtn.style.opacity = "1";
+    
+    }, 2000);
+}
+}
+
 </script>
 
 <style>
@@ -18,5 +27,6 @@ export default {};
   letter-spacing: 3px;
   font-weight: 600;
   color: #023646;
+  opacity: 0;
 }
 </style>
