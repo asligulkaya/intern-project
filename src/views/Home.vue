@@ -1,15 +1,16 @@
 <template>
   <Letter/>
+  <About/>
 </template>
 
 <script>
-import Header from "@/components/Header.vue";
 import Letter from "@/components/Letter.vue";
+import About from "@/components/About.vue"
 
 export default {
   components: {
     Letter,
-    Header
+    About
   },
 };
 </script>

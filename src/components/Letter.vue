@@ -2,7 +2,7 @@
   <section class="section">
     <Header/>
     <div class="letter-container">
-      <Pagination />
+      <Pagination current="01"/>
       <div class="svg-container">
         <svg
           width="422"
@@ -24,7 +24,7 @@
         </video>
       </div>
     </div>
-    <Scroll />
+    <Scroll text="scroll"/>
   </section>
 </template>
 
@@ -39,6 +39,7 @@ export default {
       const svgContainer = document.querySelector(".svg-container");
       const pgnAnimation = document.querySelector(".pagination");
       svgContainer.style.opacity = "1";
+      svgContainer.style.transition ="0.6s"
       pgnAnimation.style.opacity = "1";
     }, 1500);
   },
@@ -50,7 +51,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 @keyframes fade-in {
   0% {
     opacity: 0.2;
@@ -65,14 +66,15 @@ export default {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  height: 110vh;
+  height: 100vh;
   z-index: -1;
+  font-family: "Montserrat Alternates", sans-serif;
 }
 .letter-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 92vh;
+  height: 85vh; /* 80vh aslı 85vh berhan*/
   padding-top: 60px;
 }
 

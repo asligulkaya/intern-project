@@ -1,6 +1,6 @@
 <template>
   <a href="#" class="scroll-btn">
-    <span>Scroll</span>
+    <span>{{text}}</span>
   </a>
 </template>
 
@@ -12,7 +12,12 @@ export default {
       scrollBtn.style.opacity = "1";
     
     }, 2000);
-}
+},
+  props:{
+    text:{
+      type:String
+    }
+  }
 }
 
 </script>
