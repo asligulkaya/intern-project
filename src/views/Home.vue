@@ -1,19 +1,16 @@
 <template>
-  <Header />
-  <Letter />
-  <Scroll />
+  <Letter/>
+  <About/>
 </template>
 
 <script>
-import Header from "@/components/Header.vue";
 import Letter from "@/components/Letter.vue";
-import Scroll from "@/components/Scroll.vue";
+import About from "@/components/About.vue"
 
 export default {
   components: {
     Letter,
-    Scroll,
-    Header,
+    About
   },
 };
 </script>

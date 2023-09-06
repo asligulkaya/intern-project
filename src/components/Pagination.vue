@@ -1,12 +1,18 @@
 <template>
   <div class="pagination">
-    <div class="current">01</div>
+    <div class="current">{{ current }}</div>
     <div class="total">07</div>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  props:{
+    current:{
+      type: Number,
+    }
+  }
+};
 </script>
 
 <style scoped>
