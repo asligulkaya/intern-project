@@ -32,6 +32,6 @@ export default {
   letter-spacing: 3px;
   font-weight: 600;
   color: #023646;
-  opacity: 0;
+  opacity: 1;
 }
 </style>
