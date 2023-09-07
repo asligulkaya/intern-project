@@ -1,6 +1,6 @@
 <template>
   <div class="pagination">
-    <div class="current">{{ current }}</div>
+    <div class="current" :style="{ 'border-bottom': '1px solid ' + borderColor }">{{ current }}</div>
     <div class="total">07</div>
   </div>
 </template>
@@ -10,7 +10,10 @@ export default {
   props:{
     current:{
       type: Number,
-    }
+    },
+    borderColor: {
+      type: String,
+    },
   }
 };
 </script>
@@ -19,12 +22,12 @@ export default {
 .pagination {
   position: absolute;
   left: 15px;
+  font-family: "Montserrat Alternates", sans-serif;
 }
 
 .current {
   font-size: 16px;
   font-weight: 600;
-  border-bottom: 1px solid #023646;
   line-height: 1.5em;
 }
 

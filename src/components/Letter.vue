@@ -2,7 +2,7 @@
   <section class="section">
     <Header/>
     <div class="letter-container">
-      <Pagination current="01"/>
+      <Pagination current="01" borderColor="#023646" />
       <div class="svg-container">
         <svg
           width="422"

@@ -1,7 +1,7 @@
 <template>
   <section class="section">
     <div class="container">
-      <Pagination current="02" class="pagination" />
+      <Pagination current="02" class="pagination" borderColor="#023646"/>
       <div class="circle">
         <div class="little-circle"></div>
         <img class="group-green" src="../assets/group-green.svg" alt="" />
