@@ -1,6 +1,6 @@
 <template>
   <div class="pagination">
-    <div class="current" :style="{ 'border-bottom': '1px solid ' + borderColor }">{{ current }}</div>
+    <div class="current" :style="{ 'border-bottom': '1px solid ' + borderColor}">{{ current }}</div>
     <div class="total">07</div>
   </div>
 </template>
@@ -14,6 +14,9 @@ export default {
     borderColor: {
       type: String,
     },
+    color:{
+      type:String,
+    }
   }
 };
 </script>

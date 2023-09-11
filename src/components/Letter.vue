@@ -75,7 +75,7 @@ export default {
   justify-content: center;
   align-items: center;
   height: 85vh; /* 80vh aslı 85vh berhan*/
-  padding-top: 60px;
+  padding-top: 40px; /* 60 dan düşürdük */
 }
 
 .svg-container {

@@ -1,11 +1,18 @@
 <template>
   <a href="" class="button">
-    <span>find out more</span>
+    <span>{{ text }}</span>
   </a>
 </template>
 
 <script>
-export default {};
+export default {
+  props:{
+    text:{
+      type:String,
+      default:"find out more"
+    }
+  }
+};
 </script>
 
 <style scoped>
