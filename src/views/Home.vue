@@ -6,6 +6,7 @@
   <Product />
   <!-- <News /> -->
   <Contact />
+  <Footer />
 </template>
 
 <script>
@@ -16,6 +17,7 @@ import Production from "@/components/Production.vue";
 import Product from "@/components/Product.vue";
 import News from "@/components/News.vue"
 import Contact from "@/components/Contact.vue"
+import Footer from "@/components/Footer.vue"
 
 export default {
   components: {
@@ -25,7 +27,8 @@ export default {
     Production,
     Product,
     News,
-    Contact
+    Contact,
+    Footer
   },
 };
 </script>
