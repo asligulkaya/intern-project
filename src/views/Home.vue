@@ -4,7 +4,7 @@
   <Expertise />
   <Production />
   <Product />
-  <!-- <News /> -->
+  <News />
   <Contact />
   <Footer />
 </template>

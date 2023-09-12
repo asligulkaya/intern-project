@@ -93,7 +93,7 @@ export default {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  height: 95vh; /* 90dı */
+  height: 90vh; /* 90dı */
   z-index: -1;
   max-width: 70em;
 }

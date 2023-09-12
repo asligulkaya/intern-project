@@ -121,7 +121,7 @@ h4 {
   padding-right: 15em;
   z-index: 9999;
   height: 100%;
-  left: 0;
+  left: 100px;
   padding-left: 100px;
   color: #023646;
 }
@@ -130,9 +130,11 @@ h4 {
   display: flex;
   align-items: flex-end;
   margin-bottom: 1em;
+  width: 54%;
 }
 .half-bottom {
   height: 50%;
+  width: 60%;
 }
 .pagination{
     color:#023646;

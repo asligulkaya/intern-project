@@ -33,12 +33,17 @@ export default {
   justify-content: center;
   padding-top: 2em;
 }
+
 .menu-btn {
   display: flex;
   justify-content: flex-end;
   padding-top: 2.1em;
-  padding-right: 5px;
+  padding-right: 25px;
+  position: fixed;
+  z-index: 4;
+  right: 0;
 }
+
 .languages {
   display: flex;
   padding-top: 20px;
