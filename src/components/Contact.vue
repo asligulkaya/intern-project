@@ -1,5 +1,5 @@
 <template>
-  <section class="section">
+  <section id="contact" class="section">
     <div class="container">
     <Pagination current="07" class="pagination" borderColor="#023646"/>
       <div class="half">
@@ -83,6 +83,7 @@ export default {
   clip-path: url(#clip-path);
   transform: rotateX(180deg);
 }
+
 .btn {
   position: absolute;
   top: 50%;
@@ -93,10 +94,13 @@ export default {
   align-items: center;
   border: 3px solid #e20953;
 }
+
 .btn:hover {
   background-color: #e20953;
   color: white;
+  transition: 0.2s;
 }
+
 .paragraph {
   font-family: "Montserrat", sans-serif;
   font-size: 100%;
@@ -104,13 +108,16 @@ export default {
   margin-top: 1.5em;
   line-height: 20px;
 }
+
 h2 {
   font-size: 237.5%;
   line-height: 40px;
 }
+
 h4 {
   font-weight: 400;
 }
+
 .half {
   position: absolute;
   display: flex;
@@ -125,6 +132,7 @@ h4 {
   padding-left: 100px;
   color: #023646;
 }
+
 .half-top {
   height: 50%;
   display: flex;
@@ -132,10 +140,12 @@ h4 {
   margin-bottom: 1em;
   width: 54%;
 }
+
 .half-bottom {
   height: 50%;
   width: 60%;
 }
+
 .pagination{
     color:#023646;
 }

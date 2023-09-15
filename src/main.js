@@ -1,9 +1,10 @@
 import { createApp } from 'vue'
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 
-// import VueCarousel from 'vue-carousel';
+AOS.init();
+
 import App from './App.vue'
 import router from './router'
 
-
 createApp(App).use(router).mount('#app')
-// Vue.use(VueCarousel);

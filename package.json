@@ -8,6 +8,7 @@
     "build-css": "tailwindcss build -i src/styles.css -o public/styles.css -w"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "core-js": "^3.8.3",
     "vue": "^3.2.13",
     "vue-carousel": "^0.18.0",

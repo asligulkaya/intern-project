@@ -1,5 +1,5 @@
 <template>
-  <section class="section">
+  <section id="news" class="section">
     <div class="container">
       <div class="middle-holder">
         <div class="middle">
@@ -12,12 +12,12 @@
             <Carousel :items-to-show="3" :wrap-around="true">
               <Slide v-for="(image, id) in images" :key="id">
                 <div class="carousel__item">
-                  <img :src="require(`../assets/news/${image.url}`)" alt="" />
+                  <a href=""><img :src="require(`../assets/news/${image.url}`)" alt="" /></a>
                 </div>
               </Slide>
             </Carousel>
           </div>
-          <Scroll text="next" />
+          <Scroll text="next" page="#contact" />
         </div>
       </div>
     </div>

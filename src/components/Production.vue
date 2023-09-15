@@ -1,5 +1,5 @@
 <template>
-  <section class="section">
+  <section id="production" class="section">
     <div class="flex">
       <div class="half">
         <div class="title">
@@ -19,7 +19,7 @@
       </div>
     </div>
   </section>
-  <Scroll text="next" class="next-btn" />
+  <Scroll text="next" class="next-btn" page="#product"/>
 </template>
 
 <script>

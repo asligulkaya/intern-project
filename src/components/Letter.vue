@@ -1,6 +1,6 @@
 <template>
-  <section class="section">
-    <Header/>
+  <section id="letter" class="section">
+    <Header />
     <div class="letter-container">
       <Pagination current="01" borderColor="#023646" />
       <div class="svg-container">
@@ -24,13 +24,13 @@
         </video>
       </div>
     </div>
-    <Scroll text="scroll"/>
+    <Scroll text="scroll" class="scroll" page="#about" />
   </section>
 </template>
 
 <script>
 import Pagination from "./Pagination.vue";
-import Header from "./Header.vue"
+import Header from "./Header.vue";
 import Scroll from "./Scroll.vue";
 
 export default {
@@ -38,15 +38,19 @@ export default {
     setTimeout(() => {
       const svgContainer = document.querySelector(".svg-container");
       const pgnAnimation = document.querySelector(".pagination");
+      const scrollBtn = document.querySelector(".scroll");
       svgContainer.style.opacity = "1";
-      svgContainer.style.transition ="0.6s"
+      svgContainer.style.transition = "0.6s";
       pgnAnimation.style.opacity = "1";
+      pgnAnimation.style.transition = "0.6s";
+      scrollBtn.style.opacity = "1";
+      scrollBtn.style.transition = "0.6s";
     }, 1500);
   },
   components: {
     Pagination,
     Scroll,
-    Header
+    Header,
   },
 };
 </script>
