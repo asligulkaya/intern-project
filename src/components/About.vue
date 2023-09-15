@@ -1,13 +1,13 @@
 <template>
-  <section class="section">
+  <section id="about" class="section">
     <div class="container">
-      <Pagination current="02" class="pagination" borderColor="#023646"/>
+      <Pagination current="02" class="pagination" borderColor="#023646" />
       <div class="circle">
         <div class="little-circle"></div>
         <img class="group-green" src="../assets/group-green.svg" alt="" />
       </div>
       <div class="half">
-        <div class="title">
+        <div class="title" data-aos="fade-up">
           <h4>Corporate identity</h4>
           <h2>
             Leading the way in our field
@@ -31,15 +31,23 @@
       </div>
     </div>
   </section>
-  <Scroll text="next" class="next-btn" />
+  <Scroll text="next" class="next-btn" page="#expertise" />
 </template>
 
 <script>
+
 import Pagination from "./Pagination.vue";
 import Button from "./Button.vue";
 import Scroll from "./Scroll.vue";
 
 export default {
+  mounted() {
+    setTimeout(() => {
+      const nextBtn = document.querySelector(".next-btn");
+      nextBtn.style.opacity = "1";
+      nextBtn.style.transition = "0.6s";
+    }, 1500);
+  },
   components: {
     Pagination,
     Button,
@@ -57,6 +65,7 @@ export default {
 .pagination {
   top: 150vh;
 }
+
 .circle {
   opacity: 1;
   z-index: -1;
@@ -77,6 +86,7 @@ export default {
   display: flex;
   align-items: center;
 }
+
 .little-circle {
   display: block;
   position: absolute;
@@ -89,14 +99,16 @@ export default {
   background-color: white;
   border-radius: 50%;
 }
+
 .section {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  height: 90vh; /* 90dı */
+  height: 90vh;
   z-index: -1;
   max-width: 70em;
 }
+
 .container {
   color: #023646;
   padding-top: 10em;
@@ -107,6 +119,7 @@ export default {
   letter-spacing: 0.076em;
   font-family: "Zilla Slab", serif;
 }
+
 .paragraph {
   font-family: "Montserrat", sans-serif;
   font-size: 100%;
@@ -114,10 +127,12 @@ export default {
   margin-top: 1.5em;
   line-height: 20px;
 }
+
 h2 {
   font-size: 237.5%;
   line-height: 40px;
 }
+
 h4 {
   font-weight: 400;
 }

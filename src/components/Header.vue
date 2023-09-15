@@ -18,7 +18,11 @@ export default {
   mounted() {
     setTimeout(() => {
       const header = document.querySelector(".header");
+      const menuBtn = document.querySelector(".menu-btn");
       header.style.opacity = "1";
+      header.style.transition = "0.6s";
+      menuBtn.style.opacity = "1";
+      menuBtn.style.transition = "0.6s";
     }, 1000);
   },
 };
@@ -42,6 +46,8 @@ export default {
   position: fixed;
   z-index: 4;
   right: 0;
+  opacity: 0;
+  cursor: pointer;
 }
 
 .languages {

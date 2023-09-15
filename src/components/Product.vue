@@ -1,5 +1,5 @@
 <template>
-  <section class="section">
+  <section id="product" class="section">
     <div class="container">
       <div class="middle-container">
         <div class="middle">
@@ -26,7 +26,7 @@
           </div>
           <div class="btn-div">
             <Button class="more-btn" />
-            <Scroll text="next" class="next-btn" />
+            <Scroll text="next" class="next-btn" page="#news" />
           </div>
         </div>
       </div>

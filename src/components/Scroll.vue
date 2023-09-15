@@ -1,25 +1,20 @@
 <template>
-  <a href="#" class="scroll-btn">
-    <span>{{text}}</span>
+  <a :href="page" class="scroll-btn">
+    <span>{{ text }}</span>
   </a>
 </template>
 
 <script>
 export default {
-  mounted() {
-    setTimeout(() => {
-      const scrollBtn = document.querySelector(".scroll-btn");
-      scrollBtn.style.opacity = "1";
-    
-    }, 2000);
-},
-  props:{
-    text:{
-      type:String
+  props: {
+    text: {
+      type: String,
+    },
+    page: {
+      type: String,
     }
-  }
-}
-
+  },
+};
 </script>
 
 <style>
