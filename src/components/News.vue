@@ -4,15 +4,28 @@
       <div class="middle-holder">
         <div class="middle">
           <div class="title">
-            <h4>News</h4>
-            <h2>The latest news from Crusta C, fresh in!</h2>
+            <h4 data-aos="fade-left" data-aos-duration="1000">News</h4>
+            <h2
+              data-aos="fade-left"
+              data-aos-delay="350"
+              data-aos-duration="1000"
+            >
+              The latest news from Crusta C, fresh in!
+            </h2>
           </div>
           <div class="tiles-container">
             <Pagination current="06" class="pagination" borderColor="#023646" />
             <Carousel :items-to-show="3" :wrap-around="true">
               <Slide v-for="(image, id) in images" :key="id">
-                <div class="carousel__item">
-                  <a href=""><img :src="require(`../assets/news/${image.url}`)" alt="" /></a>
+                <div
+                  class="carousel__item"
+                  data-aos="fade-right"
+                  data-aos-delay="550"
+                  data-aos-duration="1000"
+                >
+                  <a href=""
+                    ><img :src="require(`../assets/news/${image.url}`)" alt=""
+                  /></a>
                 </div>
               </Slide>
             </Carousel>
