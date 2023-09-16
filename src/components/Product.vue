@@ -4,28 +4,56 @@
       <div class="middle-container">
         <div class="middle">
           <div class="title">
-            <h4>Our product ranges</h4>
-            <h2>Our three product ranges</h2>
+            <h4 data-aos="fade-left" data-aos-duration="1000">
+              Our product ranges
+            </h4>
+            <h2
+              data-aos="fade-left"
+              data-aos-delay="350"
+              data-aos-duration="1000"
+            >
+              Our three product ranges
+            </h2>
           </div>
           <div class="tiles-container">
             <Pagination current="05" borderColor="white" class="pagination" />
             <div class="slick-list">
-              <div class="product">
+              <div
+                class="product"
+                data-aos="zoom-in"
+                data-aos-delay="550"
+                data-aos-duration="1000"
+              >
                 <img src="../assets/product1.png" alt="" />
                 <div class="g-label" id="product1">Prestige</div>
               </div>
-              <div class="product">
+              <div
+                class="product"
+                data-aos="zoom-in"
+                data-aos-delay="550"
+                data-aos-duration="1000"
+              >
                 <img src="../assets/product2.png" alt="" />
                 <div class="g-label" id="product2">Marinated</div>
               </div>
-              <div class="product">
+              <div
+                class="product"
+                data-aos="zoom-in"
+                data-aos-delay="550"
+                data-aos-duration="1000"
+              >
                 <img src="../assets/product3.png" alt="" />
                 <div class="g-label" id="product3">Tradition</div>
               </div>
             </div>
           </div>
           <div class="btn-div">
-            <Button class="more-btn" />
+            <Button
+              class="more-btn"
+              data-aos="fade-left"
+              data-aos-delay="650"
+              data-aos-duration="1000"
+            />
             <Scroll text="next" class="next-btn" page="#news" />
           </div>
         </div>

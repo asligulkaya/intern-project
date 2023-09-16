@@ -24,19 +24,38 @@
       </div>
       <div class="half">
         <div class="title">
-          <h4>Expertise</h4>
-          <h2>Find out more about our expertise</h2>
+          <h4 data-aos="fade-left" data-aos-duration="1000">Expertise</h4>
+          <h2
+            data-aos="fade-left"
+            data-aos-delay="350"
+            data-aos-duration="1000"
+          >
+            Find out more about our expertise
+          </h2>
         </div>
         <Pagination current="03" class="pagination" borderColor="white" />
-        <p class="paragraph">
+        <p
+          class="paragraph"
+          data-aos="fade-left"
+          data-aos-delay="450"
+          data-aos-duration="1000"
+        >
           Our family-run firm boasts decades of experience and an in-depth
           expertise in all the seafood products that we offer our customers.
         </p>
-        <Button />
+        <Button
+          data-aos="fade-left"
+          data-aos-delay="650"
+          data-aos-duration="1000"
+        />
       </div>
     </div>
   </section>
-  <Scroll text="next" class="next-btn" page="#production"/>
+  <Scroll
+    text="next"
+    class="next-btn"
+    page="#production"
+  />
 </template>
 
 <script>
@@ -110,7 +129,7 @@ export default {
   height: auto;
 }
 
-.svg-play-img:hover{
+.svg-play-img:hover {
   width: 85px;
   transition: 0.4s;
 }

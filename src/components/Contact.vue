@@ -1,16 +1,27 @@
 <template>
   <section id="contact" class="section">
     <div class="container">
-    <Pagination current="07" class="pagination" borderColor="#023646"/>
+      <Pagination current="07" class="pagination" borderColor="#023646" />
       <div class="half">
         <div class="half-top">
           <div class="title">
-            <h4>Contact</h4>
-            <h2>Have you any questions ? Or perhaps a business need ?</h2>
+            <h4 data-aos="fade-left" data-aos-duration="1000">Contact</h4>
+            <h2
+              data-aos="fade-left"
+              data-aos-delay="350"
+              data-aos-duration="1000"
+            >
+              Have you any questions ? Or perhaps a business need ?
+            </h2>
           </div>
         </div>
         <div class="half-bottom">
-          <p class="paragraph">
+          <p
+            class="paragraph"
+            data-aos="fade-left"
+            data-aos-delay="450"
+            data-aos-duration="1000"
+          >
             If you would like to contact us, feel free to get in touch here.
           </p>
         </div>
@@ -34,7 +45,10 @@
           <source src="../assets/waves.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        <Button class="btn" text="contact us" />
+        <Button
+          class="btn"
+          text="contact us"
+        />
       </div>
     </div>
   </section>
@@ -46,7 +60,7 @@ import Pagination from "./Pagination.vue";
 export default {
   components: {
     Button,
-    Pagination
+    Pagination,
   },
 };
 </script>
@@ -146,7 +160,7 @@ h4 {
   width: 60%;
 }
 
-.pagination{
-    color:#023646;
+.pagination {
+  color: #023646;
 }
 </style>

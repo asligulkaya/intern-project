@@ -2,40 +2,63 @@
   <section id="about" class="section">
     <div class="container">
       <Pagination current="02" class="pagination" borderColor="#023646" />
-      <div class="circle">
-        <div class="little-circle"></div>
+      <div class="circle" data-aos="zoom-in" data-aos-duration="1000">
+        <div class="little-circle" data-aos="zoom-in" data-aos-delay="750" data-aos-duration="1000"></div>
         <img class="group-green" src="../assets/group-green.svg" alt="" />
       </div>
       <div class="half">
-        <div class="title" data-aos="fade-up">
-          <h4>Corporate identity</h4>
-          <h2>
+        <div class="title">
+          <h4 data-aos="fade-left" data-aos-duration="1000">
+            Corporate identity
+          </h4>
+          <h2
+            data-aos="fade-left"
+            data-aos-delay="350"
+            data-aos-duration="1000"
+          >
             Leading the way in our field
             <br />
             since 1993
             <br />
           </h2>
         </div>
-        <p class="paragraph">
+        <p
+          class="paragraph"
+          data-aos="fade-left"
+          data-aos-delay="450"
+          data-aos-duration="1000"
+        >
           We are the top supplier of cooked, refrigerated prawns to the French
           market and as such, we are constantly in the process of improving our
           product offering to cement our position as the go-to player on the
           seafood products scene.
         </p>
-        <p class="paragraph">
+        <p
+          class="paragraph"
+          data-aos="fade-left"
+          data-aos-delay="550"
+          data-aos-duration="1000"
+        >
           We’ve succeeded in doing this by maintaining a steady course over the
           last 27 years towards our end destination – a shared taste for
           innovation!
         </p>
-        <Button />
+        <Button
+          data-aos="fade-left"
+          data-aos-delay="650"
+          data-aos-duration="1000"
+        />
       </div>
     </div>
   </section>
-  <Scroll text="next" class="next-btn" page="#expertise" />
+  <Scroll
+    text="next"
+    class="next-btn"
+    page="#expertise"
+  />
 </template>
 
 <script>
-
 import Pagination from "./Pagination.vue";
 import Button from "./Button.vue";
 import Scroll from "./Scroll.vue";

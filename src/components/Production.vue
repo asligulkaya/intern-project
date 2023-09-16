@@ -3,23 +3,42 @@
     <div class="flex">
       <div class="half">
         <div class="title">
-          <h4>Expertise</h4>
-          <h2>Find out more about our production sites</h2>
+          <h4 data-aos="fade-left" data-aos-duration="1000">Expertise</h4>
+          <h2
+            data-aos="fade-left"
+            data-aos-delay="350"
+            data-aos-duration="1000"
+          >
+            Find out more about our production sites
+          </h2>
         </div>
         <Pagination current="04" borderColor="#023646" />
-        <p class="paragraph">
+        <p
+          class="paragraph"
+          data-aos="fade-left"
+          data-aos-delay="450"
+          data-aos-duration="1000"
+        >
           We have four strategically-located, highly-efficient production sites
           in France which are ideally-sited to cater to the wider European
           market.
         </p>
-        <Button />
+        <Button
+          data-aos="fade-left"
+          data-aos-delay="650"
+          data-aos-duration="1000"
+        />
       </div>
       <div class="half-image">
         <img src="../assets/sites.jpg" alt="" />
       </div>
     </div>
   </section>
-  <Scroll text="next" class="next-btn" page="#product"/>
+  <Scroll
+    text="next"
+    class="next-btn"
+    page="#product"
+  />
 </template>
 
 <script>
